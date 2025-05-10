@@ -84,9 +84,13 @@
             <img id="decodedImage" src="" alt="Decoded image will appear here">
         </div>
         <button id="downloadImageButton" style="display: none;" onclick="downloadImage()">Download Image</button>
+
+        <h2>Upload Base64 Text File</h2>
+        <input type="file" id="base64FileInput" accept=".txt">
+        <button onclick="uploadBase64File()">Upload and Convert</button>
     </div>
     <footer>
-        <p>Made with ❤️ by DDp:)</p>
+        <p>Made with ❤️ by Daxexp</p>
     </footer>
 
     <script>
@@ -141,6 +145,29 @@
             link.href = decodedImage.src;
             link.download = 'decoded-image.png';
             link.click();
+        }
+
+        function uploadBase64File() {
+            const base64FileInput = document.getElementById('base64FileInput');
+            const decodedImage = document.getElementById('decodedImage');
+            const downloadImageButton = document.getElementById('downloadImageButton');
+            if (base64FileInput.files.length === 0) {
+                alert('Please select a Base64 text file.');
+                return;
+            }
+            const file = base64FileInput.files[0];
+            const reader = new FileReader();
+            reader.onload = function () {
+                try {
+                    const base64String = reader.result.trim();
+                    decodedImage.src = `data:image/png;base64,${base64String}`;
+                    decodedImage.alt = "Decoded Image";
+                    downloadImageButton.style.display = "inline-block"; // Show download image button
+                } catch (error) {
+                    alert('Invalid Base64 string in the file.');
+                }
+            };
+            reader.readAsText(file);
         }
     </script>
 </body>
